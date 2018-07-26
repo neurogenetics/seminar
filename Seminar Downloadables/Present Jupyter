@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd ~ 
+
+notebook=""
+
+until [ ! -z "$notebook" -a -f "$notebook" ]; do
+read -p 'What notebook would you like to present?: ' notebook
+notebook+=".ipynb"
+notebook=`find . -iname "$notebook"`
+done
+
+export PATH=~/anaconda3/bin:$PATH
+conda install nbconvert -y
+jupyter nbconvert "$notebook" --to slides --post serve

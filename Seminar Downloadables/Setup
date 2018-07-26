@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd ~
+
+a=`find . -iname "Jupyter Notebooks alias"`
+echo a has been found
+
+b=`find . -iname "RStudio alias"`
+echo b has been found
+
+c=`find . -iname "Present Jupyter alias"`
+echo c has been found
+
+mv "$a" Desktop
+mv "$b" Desktop
+mv "$c" Desktop

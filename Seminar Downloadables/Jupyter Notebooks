@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export PATH=~/anaconda3/bin:$PATH
+cp -p /lib.cp -p /lib/x86_64-linux-gnu/libreadline.so.6 ~/anaconda/lib/libreadline.so.6
+conda update conda -y
+conda update jupyter -y
+conda update nb_conda -y
+conda update nbconvert -y
+conda update -c conda-forge pandoc -y
+jupyter notebook
