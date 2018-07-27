@@ -10,6 +10,6 @@ notebook+=".ipynb"
 notebook=`find . -iname "$notebook"`
 done
 
-export PATH=~/anaconda3/bin:$PATH
+export PATH=/anaconda3/bin:$PATH
 conda install nbconvert -y
 jupyter nbconvert "$notebook" --to slides --post serve
