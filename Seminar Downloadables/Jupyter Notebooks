@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH=~/anaconda3/bin:$PATH
+export PATH=/anaconda3/bin:$PATH
 cp -p /lib.cp -p /lib/x86_64-linux-gnu/libreadline.so.6 ~/anaconda/lib/libreadline.so.6
 conda update conda -y
 conda update jupyter -y
